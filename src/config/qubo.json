@@ -1,0 +1,169 @@
+{   
+    "ENDIAN_BYTEORDER": ">",
+    "ENDIAN_WORDORDER": ">",
+    "MEASUREMENTS": [
+        {
+            "REGISTER_NAME": "V1N",
+            "REGISTER_NUMBER": 256,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mV"
+        },
+        {
+            "REGISTER_NAME": "V2N",
+            "REGISTER_NUMBER": 258,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mV"
+        },
+        {
+            "REGISTER_NAME": "V3N",
+            "REGISTER_NUMBER": 260,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mV"
+        },
+        {
+            "REGISTER_NAME": "V12",
+            "REGISTER_NUMBER": 262,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mV"
+        },
+        {
+            "REGISTER_NAME": "V23",
+            "REGISTER_NUMBER": 264,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mV"
+        },
+        {
+            "REGISTER_NAME": "V31",
+            "REGISTER_NUMBER": 266,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mV"
+        },
+        {
+            "REGISTER_NAME": "A1",
+            "REGISTER_NUMBER": 268,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mA"
+        },
+        {
+            "REGISTER_NAME": "A2",
+            "REGISTER_NUMBER": 270,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mA"
+        },
+        {
+            "REGISTER_NAME": "A3",
+            "REGISTER_NUMBER": 272,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mA"
+        },
+        {
+            "REGISTER_NAME": "AN",
+            "REGISTER_NUMBER": 300,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mA"
+        },
+        {
+            "REGISTER_NAME": "P1",
+            "REGISTER_NUMBER": 324,
+            "VALUE_TYPE": "INT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "P2",
+            "REGISTER_NUMBER": 326,
+            "VALUE_TYPE": "INT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "P3",
+            "REGISTER_NUMBER": 328,
+            "VALUE_TYPE": "INT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "Ptot",
+            "REGISTER_NUMBER": 276,
+            "VALUE_TYPE": "INT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "Q1",
+            "REGISTER_NUMBER": 330,
+            "VALUE_TYPE": "INT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Q2",
+            "REGISTER_NUMBER": 332,
+            "VALUE_TYPE": "INT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Q3",
+            "REGISTER_NUMBER": 334,
+            "VALUE_TYPE": "INT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Qtot",
+            "REGISTER_NUMBER": 278,
+            "VALUE_TYPE": "INT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Cosphi1",
+            "REGISTER_NUMBER": 348,
+            "VALUE_TYPE": "INT32",
+            "UOM": "m-"
+        },
+        {
+            "REGISTER_NAME": "Cosphi2",
+            "REGISTER_NUMBER": 350,
+            "VALUE_TYPE": "INT32",
+            "UOM": "m-"
+        },
+        {
+            "REGISTER_NAME": "Cosphi3",
+            "REGISTER_NUMBER": 352,
+            "VALUE_TYPE": "INT32",
+            "UOM": "m-"
+        },
+        {
+            "REGISTER_NAME": "Freq",
+            "REGISTER_NUMBER": 274,
+            "VALUE_TYPE": "INT32",
+            "UOM": "mHz"
+        },
+        {
+            "REGISTER_NAME": "Econstot",
+            "REGISTER_NUMBER": 282,
+            "VALUE_TYPE": "INT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Einjtot",
+            "REGISTER_NUMBER": 318,
+            "VALUE_TYPE": "INT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Eindtot",
+            "REGISTER_NUMBER": 284,
+            "VALUE_TYPE": "INT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Ecaptot",
+            "REGISTER_NUMBER": 320,
+            "VALUE_TYPE": "INT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "EMultiplier",
+            "REGISTER_NUMBER": 286,
+            "VALUE_TYPE": "INT32",
+            "UOM": "Wh"
+        }
+    
+]
+}

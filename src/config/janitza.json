@@ -1,0 +1,240 @@
+{
+    "NAME" : "Janitza",
+    "HOST": "20.0.0.249",
+    "PORT": 502,
+    "MAX_ATTEMPTS": 3,
+    "ENDIAN_BYTEORDER": ">",
+    "ENDIAN_WORDORDER": ">",
+    "SAMPLING_TIME_S": 10,
+    "MEASUREMENTS": [
+        {
+            "REGISTER_NAME": "V1N",
+            "REGISTER_NUMBER": 19000,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "V"
+        },
+        {
+            "REGISTER_NAME": "V2N",
+            "REGISTER_NUMBER": 19002,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "V"
+        },
+        {
+            "REGISTER_NAME": "V3N",
+            "REGISTER_NUMBER": 19004,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "V"
+        },
+        {
+            "REGISTER_NAME": "V12",
+            "REGISTER_NUMBER": 19006,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "V"
+        },
+        {
+            "REGISTER_NAME": "V23",
+            "REGISTER_NUMBER": 19008,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "V"
+        },
+        {
+            "REGISTER_NAME": "V31",
+            "REGISTER_NUMBER": 19010,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "V"
+        },
+        {
+            "REGISTER_NAME": "A1",
+            "REGISTER_NUMBER": 19012,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "A"
+        },
+        {
+            "REGISTER_NAME": "A2",
+            "REGISTER_NUMBER": 19014,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "A"
+        },
+        {
+            "REGISTER_NAME": "A3",
+            "REGISTER_NUMBER": 19016,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "A"
+        },
+        {
+            "REGISTER_NAME": "AN",
+            "REGISTER_NUMBER": 19018,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "A"
+        },
+        {
+            "REGISTER_NAME": "P1",
+            "REGISTER_NUMBER": 19020,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "P2",
+            "REGISTER_NUMBER": 19022,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "P3",
+            "REGISTER_NUMBER": 19024,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "Ptot",
+            "REGISTER_NUMBER": 19026,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "W"
+        },
+        {
+            "REGISTER_NAME": "Q1",
+            "REGISTER_NUMBER": 19036,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Q2",
+            "REGISTER_NUMBER": 19038,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Q3",
+            "REGISTER_NUMBER": 19040,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Qtot",
+            "REGISTER_NUMBER": 19042,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAr"
+        },
+        {
+            "REGISTER_NAME": "Cosphi1",
+            "REGISTER_NUMBER": 19044,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "-"
+        },
+        {
+            "REGISTER_NAME": "Cosphi2",
+            "REGISTER_NUMBER": 19046,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "-"
+        },
+        {
+            "REGISTER_NAME": "Cosphi3",
+            "REGISTER_NUMBER": 19048,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "-"
+        },
+        {
+            "REGISTER_NAME": "Freq",
+            "REGISTER_NUMBER": 19050,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Hz"
+        },
+        {
+            "REGISTER_NAME": "Econs1",
+            "REGISTER_NUMBER": 19062,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Econs2",
+            "REGISTER_NUMBER": 19064,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Econs3",
+            "REGISTER_NUMBER": 19066,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Econstot",
+            "REGISTER_NUMBER": 19068,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Einj1",
+            "REGISTER_NUMBER": 19070,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Einj2",
+            "REGISTER_NUMBER": 19072,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Einj3",
+            "REGISTER_NUMBER": 19074,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Einjtot",
+            "REGISTER_NUMBER": 19076,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "Wh"
+        },
+        {
+            "REGISTER_NAME": "Eind1",
+            "REGISTER_NUMBER": 19094,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Eind2",
+            "REGISTER_NUMBER": 19096,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Eind3",
+            "REGISTER_NUMBER": 19098,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Eindtot",
+            "REGISTER_NUMBER": 19100,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Ecap1",
+            "REGISTER_NUMBER": 19102,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Ecap2",
+            "REGISTER_NUMBER": 19104,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Ecap3",
+            "REGISTER_NUMBER": 19106,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        },
+        {
+            "REGISTER_NAME": "Ecaptot",
+            "REGISTER_NUMBER": 19108,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "VAhr"
+        }
+    
+]
+}

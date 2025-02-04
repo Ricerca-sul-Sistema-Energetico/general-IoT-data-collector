@@ -1,0 +1,30 @@
+{   
+    "NAME" : "Teltonika",
+    "HOST": "192.168.1.1",
+    "PORT": 502,
+    "MAX_ATTEMPTS": 3,
+    "ENDIAN_BYTEORDER": ">",
+    "ENDIAN_WORDORDER": ">",
+    "SAMPLING_TIME_S": 10,
+    "MEASUREMENTS": [
+        {
+            "REGISTER_NAME": "GPS_LATITUDE",
+            "REGISTER_NUMBER": 143,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "-"
+        },
+        {
+            "REGISTER_NAME": "GPS_LONGITUDE",
+            "REGISTER_NUMBER": 145,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "-"
+        },
+        {
+            "REGISTER_NAME": "GPS_SPEED",
+            "REGISTER_NUMBER": 179,
+            "VALUE_TYPE": "FLOAT32",
+            "UOM": "-"
+        }
+    
+]
+}

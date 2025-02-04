@@ -1,0 +1,22 @@
+
+version: "3"
+
+services:
+
+  modbus_reader_18kJ:
+    build: .
+    image: modbus_to_mqtt-influx
+    container_name: modbus2influx_18kJ
+    restart: unless-stopped
+    command: main.py
+    environment:
+      - ENV_FILE=18kJ.env
+
+  modbus_reader_officina:
+    build: .
+    image: modbus_to_mqtt-influx
+    container_name: modbus2influx_officina848
+    restart: unless-stopped
+    command: main.py
+    environment:
+      - ENV_FILE=officina848.env
