@@ -15,14 +15,14 @@ if __name__ == "__main__":
         time.sleep(polling_interval)  # type: ignore
         overall_modbus_measurements = {}
         for modbus_device, modbus_module in modbus_module_dict.items():
-            if modbus_module.connected:
-                acquired_data = modbus_module.read_device_config_measurements()
-                corrected_data = modbus_module.convert_unit_of_measure(acquired_data)
-                overall_modbus_measurements[modbus_device] = corrected_data
-            else:
-                Logger.warning(f" Modbus server {modbus_device} not connected. Retry connection ... ")
+            if not modbus_module.connected:
+                Logger.warning(f" Modbus server {modbus_device} not connected. Reconnecting ... ")
                 connection = modbus_module.connect()
                 Logger.info(f"Modbus server {modbus_device} reconnection attempt: {connection}")
+
+            acquired_data = modbus_module.read_device_config_measurements()
+            corrected_data = modbus_module.convert_unit_of_measure(acquired_data)
+            overall_modbus_measurements[modbus_device] = corrected_data
 
         if len(overall_modbus_measurements) > 0:
             Logger.debug(f"Finished taking modbus measurements:{overall_modbus_measurements}")
