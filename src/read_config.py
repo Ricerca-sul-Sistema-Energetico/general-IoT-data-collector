@@ -2,7 +2,6 @@ import os
 import logging
 from collections import namedtuple
 from dotenv import dotenv_values
-from typing import List
 
 MqttConfig = namedtuple("MqttConfig", "USER, PASSWORD, HOST, PORT, KEEPALIVE")
 InfluxConfig = namedtuple("InfluxConfig", "USER, PASSWORD, HOST, PORT, DATABASE")

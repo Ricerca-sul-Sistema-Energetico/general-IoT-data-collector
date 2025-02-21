@@ -4,7 +4,6 @@ import time
 from datetime import datetime as dt
 import pytz
 import json
-import time
 
 if mqtt_client is not None:
     mqtt_client.loop_start()  # Attiva threading asincrono per gestione connessione con broker mqtt
