@@ -1,9 +1,9 @@
 from pymodbus.client import ModbusTcpClient
 from pymodbus.client.mixin import ModbusClientMixin
-from pymodbus.payload import BinaryPayloadDecoder
 from models.base_models import DeviceConfig
 from typing import List
 from read_config import Logger
+import time
 
 
 class ModbusModule(ModbusTcpClient):
@@ -20,7 +20,7 @@ class ModbusModule(ModbusTcpClient):
             address=initial_address, count=data_type_length * nr_measurements, slave=1
         )
         if read_result.isError():
-            print(f"Errore nella lettua dei registri: {read_result}")
+            print(f"Errore nella lettura dei registri: {read_result}")
             return None
         registers = read_result.registers
 
@@ -43,32 +43,19 @@ class ModbusModule(ModbusTcpClient):
             if read_result.isError():
                 Logger.error(f"Errore nella lettura dei registri: {read_result}")
                 continue
-            decoder = BinaryPayloadDecoder.fromRegisters(
-                registers=read_result.registers,
-                byteorder=self.modbus_device.ENDIAN_BYTEORDER,
-                wordorder=self.modbus_device.ENDIAN_WORDORDER,
-            )
-            if data_type is ModbusClientMixin.DATATYPE.FLOAT32:
-                data = decoder.decode_32bit_float()
-            elif data_type is ModbusClientMixin.DATATYPE.FLOAT64:
-                data = decoder.decode_64bit_float()
-            elif data_type is ModbusClientMixin.DATATYPE.INT16:
-                data = decoder.decode_16bit_int()
-            elif data_type is ModbusClientMixin.DATATYPE.INT32:
-                data = decoder.decode_32bit_int()
-            elif data_type is ModbusClientMixin.DATATYPE.INT64:
-                data = decoder.decode_64bit_int()
-            elif data_type is ModbusClientMixin.DATATYPE.UINT16:
-                data = decoder.decode_16bit_uint()
-            elif data_type is ModbusClientMixin.DATATYPE.UINT32:
-                data = decoder.decode_32bit_uint()
-            elif data_type is ModbusClientMixin.DATATYPE.UINT64:
-                data = decoder.decode_64bit_uint()
-            else:
+            decoded_value = ModbusClientMixin.convert_from_registers(
+                                                                     read_result.registers,
+                                                                     data_type,
+                                                                     self.modbus_device.ENDIAN_BYTEORDER,
+                                                                     self.modbus_device.ENDIAN_WORDORDER
+                            )
+            if decoded_value is None:
                 Logger.error(
                     f"Datatype del registro {register.REGISTER_NAME} non presente nei possibili da decodificare. \
                         Registri letti: {read_result.registers}"
                 )
+            else:
+                data = decoded_value
 
             # data = self.convert_from_registers(registers=read_result.registers, data_type=data_type)
 

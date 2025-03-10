@@ -3,3 +3,4 @@ paho-mqtt
 pymodbus 
 pydantic
 influxdb
+psycopg2

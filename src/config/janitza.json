@@ -1,8 +1,4 @@
 {
-    "NAME" : "Janitza",
-    "HOST": "20.0.0.249",
-    "PORT": 502,
-    "MAX_ATTEMPTS": 3,
     "ENDIAN_BYTEORDER": ">",
     "ENDIAN_WORDORDER": ">",
     "SAMPLING_TIME_S": 10,
