@@ -57,7 +57,6 @@ class ModbusModule(ModbusTcpClient):
             else:
                 data = decoded_value
 
-            # data = self.convert_from_registers(registers=read_result.registers, data_type=data_type)
 
             collected_data.append({"name": register.REGISTER_NAME, "value": data, "unit": register.UOM})
         return collected_data

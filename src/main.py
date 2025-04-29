@@ -75,7 +75,6 @@ if __name__ == "__main__":
                         Logger.info(f"Inserting data into postgre: {timestamp} {value}")
                         query = f"INSERT INTO {postgre_config.TABLE_NAME} ({postgre_config.COLUMN_NAMEA}, {postgre_config.COLUMN_NAMEB}) VALUES (%s, %s);"
                         postgre_client.cursor().execute(query, (timestamp, value))
-                        # postgre_client.cursor().execute(f'INSERT INTO {postgre_config.TABLE_NAME} {columns_tuple} VALUES (%s, %s);', (timestamp, value))
                         postgre_client.commit()
         else:
             Logger.info("No modbus messages collected. Check modbus servers.")
