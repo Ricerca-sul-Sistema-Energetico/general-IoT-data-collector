@@ -1,5 +1,5 @@
-python-dotenv=1.0.1
-paho-mqtt=2.0.0
-pymodbus=3.6.6
-pydantic=2.6.4
-influxdb=5.3.1
+python-dotenv==1.0.1
+paho-mqtt==2.0.0
+pymodbus==3.6.6
+pydantic==2.6.4
+influxdb==5.3.1
