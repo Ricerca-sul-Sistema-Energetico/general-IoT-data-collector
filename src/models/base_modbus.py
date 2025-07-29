@@ -11,14 +11,10 @@ class ModbusModule(ModbusTcpClient):
         super().__init__(host=host, port=port)
         self.modbus_device = modbus_device
 
-    def read_decode_sequence_registers(
-        self, initial_address: int, nr_measurements: int, data_type: ModbusClientMixin.DATATYPE
-    ) -> list | None:
+    def read_decode_sequence_registers(self, initial_address: int, nr_measurements: int, data_type: ModbusClientMixin.DATATYPE) -> list | None:
 
         data_type_length = data_type.value[1]
-        read_result = self.read_holding_registers(
-            address=initial_address, count=data_type_length * nr_measurements, slave=1
-        )
+        read_result = self.read_holding_registers(address=initial_address, count=data_type_length * nr_measurements, slave=1)
         if read_result.isError():
             print(f"Errore nella lettua dei registri: {read_result}")
             return None
